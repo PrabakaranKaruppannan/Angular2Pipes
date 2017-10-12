@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Angular 2 Pipes';
+  name = 'praba';
+  birthdate = new Date(1988, 3, 15);
+  ages = [21, 30, 45, 60];
+  addAge(age) {
+    this.ages.push(age);
+  }
 }
